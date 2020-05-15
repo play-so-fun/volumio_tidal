@@ -13,12 +13,10 @@
 			"method": "saveAccount"
 		},
 		"saveButton": {
-			"label": "Save",
+			"label": "Save & Log in",
 			"data": [
 				"username",
-				"password",
-        "token",
-				"bitrate"
+				"password"
 			]
 		},
 		"content": [{
@@ -36,22 +34,27 @@
 				"doc": "This is the password of your Tidal account",
 				"label": "Password",
 				"value": ""
-			},
-      {
-				"id": "token",
-				"type": "text",
-				"element": "input",
-        "doc": "X-Tidal-Token",
-				"label": "Token",
-				"value": ""
-			},
-			{
-				"id": "bitrate",
-				"element": "switch",
-				"doc": "High bitrate",
-				"label": "Set for high bitrate",
-				"value": true
 			}
 		]
-	}]
+		},
+	    {
+	      "id": "section_account_logout",
+	      "element": "section",
+	      "label": "Tidal account logout",
+	      "icon": "fa-user",
+	      "description": "You are logged in as {0}. If you log out Tidal will no longer function on this Volumio instance.",
+	      "content": [
+	        {
+	          "id": "logout",
+	          "element": "button",
+	          "label": "Logout",
+	          "onClick": {
+	            "type": "controller",
+	            "endpoint": "music_service/tidal",
+	            "method": "tidalAccountLogout"
+	          }
+	        }
+	      ]
+	    }
+	]
 }

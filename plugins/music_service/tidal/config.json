@@ -10,13 +10,5 @@
   "password": {
     "type": "string",
     "value": ""
-  },
-  "token": {
-    "type": "string",
-    "value": "BI218mwp9ERZ3PFI"
-  },
-  "bitrate": {
-    "type": "boolean",
-    "value": true
   }
 }

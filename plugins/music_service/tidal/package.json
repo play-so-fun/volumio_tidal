@@ -1,6 +1,6 @@
 {
   "name": "tidal",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Tidal Plugin for Volumio2",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "kew": "^0.7.0",
-    "tidalapi": "git@github.com:gyurobenjamin/TidalAPI.git",
+    "tidalapi": "https://github.com/willardting/TidalAPI.git",
     "v-conf": "^1.4.0"
   },
   "devDependencies": {
